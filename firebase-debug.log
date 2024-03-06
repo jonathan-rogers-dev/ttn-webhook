@@ -1,0 +1,64 @@
+[debug] [2024-03-06T17:34:28.381Z] ----------------------------------------------------------------------
+[debug] [2024-03-06T17:34:28.382Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jonat\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-03-06T17:34:28.383Z] CLI Version:   13.4.0
+[debug] [2024-03-06T17:34:28.383Z] Platform:      win32
+[debug] [2024-03-06T17:34:28.383Z] Node Version:  v20.11.0
+[debug] [2024-03-06T17:34:28.383Z] Time:          Wed Mar 06 2024 12:34:28 GMT-0500 (Eastern Standard Time)
+[debug] [2024-03-06T17:34:28.383Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-06T17:34:28.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-06T17:34:28.389Z] > authorizing via signed-in user (jonathanr1rogersjonathan@outlook.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Jonat\git\ttn-webhook
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-06T17:34:31.813Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-03-06T17:34:32.352Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-03-06T17:34:32.352Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project sound-around-town (Sound Around Town) 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-06T17:34:34.029Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sound-around-town [none]
+[debug] [2024-03-06T17:34:34.243Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sound-around-town 200
+[debug] [2024-03-06T17:34:34.243Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sound-around-town {"projectId":"sound-around-town","projectNumber":"653778119357","displayName":"Sound Around Town","name":"projects/sound-around-town","resources":{"hostingSite":"sound-around-town","realtimeDatabaseInstance":"sound-around-town-default-rtdb"},"state":"ACTIVE","etag":"1_45ec3080-28c8-411a-947a-0d9f8cc9b604"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-03-06T17:34:43.919Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-03-06T17:34:44.014Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-03-06T17:34:44.014Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.1","browserURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Jonat\git\ttn-webhook is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=829760181&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-03-06T17:34:44.560Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-03-06T17:34:44.560Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-03-06T17:34:44.757Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-03-06T17:34:44.758Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-03-06T17:34:44.765Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-03-06T17:34:44.939Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-03-06T17:34:44.939Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jonathan-rogers-dev","id":39242954,"node_id":"MDQ6VXNlcjM5MjQyOTU0","avatar_url":"https://avatars.githubusercontent.com/u/39242954?v=4","gravatar_id":"","url":"https://api.github.com/users/jonathan-rogers-dev","html_url":"https://github.com/jonathan-rogers-dev","followers_url":"https://api.github.com/users/jonathan-rogers-dev/followers","following_url":"https://api.github.com/users/jonathan-rogers-dev/following{/other_user}","gists_url":"https://api.github.com/users/jonathan-rogers-dev/gists{/gist_id}","starred_url":"https://api.github.com/users/jonathan-rogers-dev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jonathan-rogers-dev/subscriptions","organizations_url":"https://api.github.com/users/jonathan-rogers-dev/orgs","repos_url":"https://api.github.com/users/jonathan-rogers-dev/repos","events_url":"https://api.github.com/users/jonathan-rogers-dev/events{/privacy}","received_events_url":"https://api.github.com/users/jonathan-rogers-dev/received_events","type":"User","site_admin":false,"name":"Jonathan Rogers","company":"North Carolina State University ","blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":35,"public_gists":0,"followers":5,"following":6,"created_at":"2018-05-13T16:28:55Z","updated_at":"2024-02-29T12:05:38Z","private_gists":8,"total_private_repos":31,"owned_private_repos":31,"disk_usage":197869,"collaborators":6,"two_factor_authentication":true,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] +  Success! Logged into GitHub as jonathan-rogers-dev 
+[info] 
