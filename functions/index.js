@@ -45,14 +45,16 @@ exports.ttn_webhook = onRequest(
  * @param {*} req Data from sensor
  */
 async function appendData(req) {
+  console.log("Received Data: ", req);
+
   try {
-    const dateString = req.data.received_at;
-    const battery = req.data.uplink_message.decoded_payload.battery;
-    const freqWeight = req.data.uplink_message.decoded_payload.freq_weight;
-    const la = req.data.uplink_message.decoded_payload.la;
-    const laeq = req.data.uplink_message.decoded_payload.laeq;
-    const lamax = req.data.uplink_message.decoded_payload.lamax;
-    const timeWeight = req.data.uplink_message.decoded_payload.time_weight;
+    const dateString = req.received_at;
+    const battery = req.uplink_message.decoded_payload.battery;
+    const freqWeight = req.uplink_message.decoded_payload.freq_weight;
+    const la = req.uplink_message.decoded_payload.la;
+    const laeq = req.uplink_message.decoded_payload.laeq;
+    const lamax = req.uplink_message.decoded_payload.lamax;
+    const timeWeight = req.uplink_message.decoded_payload.time_weight;
 
     // Handles a non-payload request
     if (la == null && laeq == null && lamax == null && freqWeight == null && timeWeight == null && battery == null) {

@@ -67,3 +67,6 @@ functions/.env
 
 # firebase admin sdk
 functions/sound-around-town-firebase-adminsdk-6hgg3-851791b77d.json
+
+# test-files directory
+test-files/
