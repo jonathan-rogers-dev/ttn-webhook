@@ -10,6 +10,9 @@
 
 require("dotenv").config();
 
+// Get the function key
+const functionKey = process.env.FUNCTION_KEY;
+
 // Initialize the Supabase client
 const {createClient} = require("@supabase/supabase-js");
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -33,6 +36,16 @@ admin.initializeApp({
 exports.ttn_webhook = onRequest(
     {cors: true}, // Automatically sets CORS headers
     (req, res) => {
+      if (req.method !== "POST") {
+        res.status(405).send("Method Not Allowed");
+        return;
+      }
+
+      if (req.headers.authorization !== functionKey) {
+        res.status(401).send("Unauthorized");
+        return;
+      }
+
       appendData(req.body);
       res.status(200).send("Connection Successful");
     },
